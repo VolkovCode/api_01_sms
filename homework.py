@@ -15,7 +15,7 @@ def get_status(user_id):
         "fields": ["online"]
     }
     url = 'https://api.vk.com/method/users.get'
-    user_status = requests.post(url, params)
+    user_status = requests.post(url, params=params)
     return user_status.json()["response"][0]["online"]  # Верните статус пользователя в ВК
 
 

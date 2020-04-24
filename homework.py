@@ -10,7 +10,7 @@ client = Client(account_sid, auth_token)
 def get_status(user_id):
     params = {
         "access_token": "f0aa074ac35127898dfe0ba3e99c8c5770111f095c48ceb83d783c25f269236052133fa78afde2fda5b1c",
-        "user_id": user_id,    
+        "user_ids": user_id,    
         "v": "5.92",
         "fields": ["online"]
     }
